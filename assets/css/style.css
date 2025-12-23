@@ -396,43 +396,6 @@ section {
 
 
 /*--------------------------------------------------------------
-# Akills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
-}
-
-/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
@@ -628,111 +591,6 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact {
-  padding-bottom: 130px;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  padding: 30px;
-  background-color: #040b14;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form .form-group {
-  margin-bottom: 15px;
-}
-
-.contact .php-email-form label {
-  padding-bottom: 8px;
-  color: white;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  color: white;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-  background-color: #040b14;
-}
-
-.contact .php-email-form textarea {
-  background-color: #040b14;
-  padding: 10px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #149ddd;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
-}
 
 @keyframes animate-loading {
   0% {
@@ -821,4 +679,38 @@ section {
 #portfolio .portfolio-wrap p,
 #portfolio .portfolio-wrap h4 {
   color: inherit !important;
+}
+
+
+/* ==============================
+   Portfolio: disable full-card hover overlay
+   Keep only the "View on GitHub" link hover
+   ============================== */
+
+/* Kill the white overlay */
+.portfolio .portfolio-wrap::before,
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 0 !important;
+}
+
+/* Optional: remove overlay element entirely (extra-safe) */
+.portfolio .portfolio-wrap::before {
+  display: none !important;
+}
+
+/* If your template slides in a links bar, disable it too */
+.portfolio .portfolio-wrap .portfolio-links,
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 0 !important;
+  bottom: -60px !important;
+  display: none !important;
+}
+
+/* Keep only the link hover behavior */
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
+  text-decoration: underline;
 }
