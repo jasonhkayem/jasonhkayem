@@ -714,3 +714,18 @@ section {
 .portfolio-link:hover {
   text-decoration: underline;
 }
+
+/* Kill the bright hover overlay on portfolio cards (GitHub Pages safe override) */
+.portfolio .portfolio-wrap::before,
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+/* Disable template “portfolio-links” slide animation if present */
+.portfolio .portfolio-wrap .portfolio-links,
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 0 !important;
+  bottom: -60px !important;
+  display: none !important;
+}
