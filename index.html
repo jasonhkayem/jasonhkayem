@@ -37,202 +37,240 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/pic.jpeg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light">Jason Hkayem</a></h1>
-      </div>
-
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#internship" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Internship</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
         </ul>
+
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Jason Hkayem</h1>
-      <p>I'm <span class="typed" data-typed-items=" a Senior Computer Science Student, an AI/ML Engineer"></span></p>
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  <div class="hero-container" data-aos="fade-in">
+    <h1>Jason Hkayem</h1>
+
+    <p>
+      I'm <span class="typed"
+        data-typed-items="a Computer Science Student (USEK), an AI/ML Engineering Intern, a Python & AWS Builder"></span>
+    </p>
+
+    <p style="margin-top: 14px; max-width: 720px; text-align: center; opacity: 0.9;">
+      I build data-driven and cloud-native ML solutions—spanning analytics, ML pipelines, and backend APIs.
+    </p>
+
+    <div style="margin-top: 18px;">
+      <a href="#portfolio" class="btn btn-outline-light btn-sm" style="margin-right: 10px;">View Projects</a>
+      <a href="CV_Jason_Hkayem.pdf" class="btn btn-outline-light btn-sm" target="_blank">Download CV</a>
     </div>
-    <div class="scroll-down">
-      <a><i class="bx bx-arrow" style="color: white;"></i></a>
-    </div>
-  </section><!-- End Hero -->
+  </div>
+
+  <div class="scroll-down" style="margin-top: 30px;">
+    <a href="#about"><i class="bx bx-arrow" style="color: white;"></i></a>
+  </div>
+</section>
+<!-- End Hero -->
+
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
 
-        <div class="section-title">
-          <h2>About</h2>
+      <div class="section-title">
+        <h2>About</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 pt-4 content d-flex flex-column" data-aos="fade-up">
+          <h3 class="text-primary">Computer Science Student | AI/ML & Cloud (Python, AWS)</h3>
+          <p class="mt-3">
+            I'm a Computer Science student at Holy Spirit University of Kaslik (USEK), graduating in 2026.
+            I focus on building practical, cloud-native systems that combine machine learning workflows, backend APIs,
+            and real deployment on AWS.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- ======= Internship Section ======= -->
+  <section id="internship" class="internship section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Internship</h2>
+      </div>
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/internship.jpeg"
+               class="img-fluid"
+               alt="Zero&One AI/ML Engineering Internship Certificate">
         </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/pic.jpeg" class="img-fluid" alt="">
+        <div class="col-lg-8 pt-4 pt-lg-0" data-aos="fade-left">
+          <h3 class="text-primary">AI / ML Engineering Intern — Zero&One</h3>
+          <p class="fst-italic mb-2">June 30, 2025 – August 29, 2025</p>
+
+          <ul>
+            <li>Built Flask-based REST APIs backed by PostgreSQL, including CRUD workflows and API testing with Postman.</li>
+            <li>Integrated Amazon Bedrock for generative AI tasks such as description generation, vector embeddings, and similarity search.</li>
+            <li>Containerized backend services using Docker and deployed them on AWS ECS behind an Application Load Balancer.</li>
+            <li>Developed a serverless CRUD inventory API using the Serverless Framework and AWS Lambda.</li>
+            <li>Implemented an EventBridge scheduler to automate S3-based workflows.</li>
+            <li>Contributed to CloudQ, an AWS-deployed learning platform with an AI-powered chatbot using Translate, Transcribe, and embeddings per course.</li>
+          </ul>
+
+          <p class="mb-0">
+            <strong>Tech stack:</strong>
+            Python, Flask, PostgreSQL, Docker, AWS (Bedrock, ECS, Lambda, S3, EventBridge, Translate, Transcribe), Serverless Framework
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Internship Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <h4>CloudQ</h4>
+            <p>Internship project: contributed to backend + AI features (embeddings/similarity search) for an AWS-deployed learning platform chatbot.</p>
+            <a href="https://github.com/tekota/cloudq-ml" target="_blank" class="portfolio-link" rel="noopener">View on GitHub</a>
           </div>
+        </div>
 
-          <div class="col-lg-8 pt-4 pt-lg-0 content d-flex flex-column" data-aos="fade-left">
-            <h3 class="text-primary">Computer Science Student &amp; Cashier.</h3>
-            <p class="mt-3">Hello! I'm Jason from Mount Lebanon. Currently pursuing a Bachelor of Science in Computer Science at Holy Spirit University of Kaslik with an expected graduation year of 2026. With a GPA of 86, I am dedicated to academic excellence. Outside of academics, I have experience in customer service as a Cashier at Anthony's Foodhub. I have also contributed to the community through volunteer work with Scouts du Liban, where I have held leadership roles. I recently completed an internship at Zero&One as an AI/ML Engineering intern, where I gained hands-on experience with AWS, and contributed to CloudQ: a team project consisting of a learning platform and a chatbot. Proficient in English, French, and Arabic, as well as various programming languages and Microsoft Office programs. Passionate about technology, serving others, and continuous learning.</p>          
-            <a href="https://raw.githubusercontent.com/jasonhkayem/jasonhkayem/main/CV_Jason_Hkayem.pdf" download class="btn btn-primary mt-3 cv-btn">Download CV</a>
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <h4>Serverless Inventory CRUD API</h4>
+            <p>CRUD inventory API built using the Serverless Framework and AWS Lambda, demonstrating automated cloud deployment.</p>
+            <a href="https://github.com/jasonhkayem/serverless-inventory-crud-api" target="_blank" class="portfolio-link" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
 
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <h4>Inventory CRUD API</h4>
+            <p>Flask-based REST API for inventory management with AWS integrations and PostgreSQL storage.</p>
+            <a href="https://github.com/jasonhkayem/inventory-crud-api" target="_blank" class="portfolio-link" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <h4>Post-COVID Analytics</h4>
+            <p>Exploratory data analysis and predictive modeling on post-COVID health outcomes using Python and Power BI.</p>
+            <a href="https://github.com/jasonhkayem/post-covid-analytics" target="_blank" class="portfolio-link" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <h4>Loan Approval Classification</h4>
+            <p>End-to-end supervised machine learning pipeline to predict loan approval outcomes.</p>
+            <a href="https://github.com/jasonhkayem/loan-approval-ml" target="_blank" class="portfolio-link" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item">
+          <div class="portfolio-wrap">
+            <h4>AI Obesity Predictor</h4>
+            <p>Machine learning model to predict obesity levels based on individual attributes.</p>
+            <a href="https://github.com/jasonhkayem/Obesity-Predictor.git" target="_blank" class="portfolio-link" rel="noopener">View on GitHub</a>
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
+    </div>
+  </section>
+  <!-- End Portfolio Section -->
 
-        <div class="section-title">
-          <h2>Skills</h2>        
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="skills">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6" data-aos="fade-up">
+          <h4>Languages</h4>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+
+          <h4>Data & Machine Learning</h4>
+          <ul>
+            <li>Pandas, NumPy</li>
+            <li>scikit-learn</li>
+            <li>Exploratory Data Analysis</li>
+            <li>Feature engineering</li>
+            <li>SHAP interpretability</li>
+          </ul>
         </div>
 
-        <div class="row skills-content">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h4>Cloud & DevOps</h4>
+          <ul>
+            <li>AWS (Bedrock, ECS, Lambda, S3, EventBridge, IAM)</li>
+            <li>Docker</li>
+            <li>Serverless Framework</li>
+            <li>Git & GitHub</li>
+          </ul>
 
-          <div class="col-lg-6" data-aos="fade-up">
+          <h4>Visualization & Tools</h4>
+          <ul>
+            <li>Power BI</li>
+            <li>Postman</li>
+          </ul>
 
-            <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Java <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">C++ <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
+          <h4>Languages Spoken</h4>
+          <ul>
+            <li>English, French, Arabic</li>
+          </ul>
         </div>
 
       </div>
-    </section><!-- End Skills Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
+    </div>
+  </section>
+  <!-- End Skills Section -->
 
-        <div class="section-title">
-          <h2>Projects</h2>
-        </div>
+</main>
+<!-- End #main -->
 
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap" >
-              <h4>Post-COVID Analytics</h4>
-              <p>Analyzed post-COVID health outcomes using Python and Power BI, combining exploratory data analysis, visualization, and predictive modeling to uncover key patterns and risk factors.</p>
-              <a href="https://github.com/jasonhkayem/post-covid-analytics" target="_blank" class="portfolio-link">View on GitHub</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap" >
-              <h4>Loan Approval Classification</h4>
-              <p>Developed an end-to-end supervised machine learning pipeline to predict loan approval outcomes using applicant financial and demographic data.</p>
-              <a href="https://github.com/jasonhkayem/loan-approval-ml" target="_blank" class="portfolio-link">View on GitHub</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap" >
-              <h4>Bank Database</h4>
-              <p>Database Management Systems course final project. Creating a model database for a bank.</p>
-              <a href="https://github.com/jasonhkayem/Bank-Database.git" target="_blank" class="portfolio-link">View on GitHub</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <h4>AI Obesity Predictor</h4>
-              <p>Machine Learning model to predict obesity level of an individual.</p>
-              <a href="https://github.com/jasonhkayem/Obesity-Predictor.git" target="_blank" class="portfolio-link">View on GitHub</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <h4>CloudQ</h4>
-              <p>Contributed to the AI team’s repository for CloudQ, a collaborative learning and assessment platform. This repo focused on the Python backend and AI components, including data processing, question handling, and model integrations</p>
-              <a href="https://github.com/tekota/cloudq-ml" target="_blank" class="portfolio-link">View on GitHub</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <h4>Inventory CRUD API</h4>
-              <p>A lightweight Flask REST API for basic inventory management with CRUD functionality and AWS integrations.</p>
-              <a href="https://github.com/jasonhkayem/inventory-crud-api" target="_blank" class="portfolio-link">View on GitHub</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <h4>Serverless Inventory CRUD API</h4>
-              <p>A minimal CRUD inventory API built with the Serverless Framework, demonstrating deployment automation.</p>
-              <a href="https://github.com/jasonhkayem/serverless-inventory-crud-api" target="_blank" class="portfolio-link">View on GitHub</a>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">

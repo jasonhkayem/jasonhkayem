@@ -778,3 +778,47 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/* ==============================
+   Dark sections: force readable light text
+   ============================== */
+
+#about, #internship, #portfolio, #skills {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+#about p, #about li,
+#internship p, #internship li,
+#portfolio p, #portfolio li,
+#skills p, #skills li {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+/* Headings */
+/* Section titles stay white */
+.section-title h2 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Role titles & subsection headings stay blue */
+#internship h3,
+#about h3,
+#skills h4 {
+  color: #149ddd !important;
+}
+
+
+/* Project links */
+#portfolio .portfolio-link {
+  color: #4dabff !important;
+}
+#portfolio .portfolio-link:hover {
+  color: #9ad0ff !important;
+}
+
+/* If your template colors portfolio card text separately */
+#portfolio .portfolio-wrap,
+#portfolio .portfolio-wrap p,
+#portfolio .portfolio-wrap h4 {
+  color: inherit !important;
+}
