@@ -1,4 +1,4 @@
-
+﻿
 # Jason Hkayem Portfolio
 
 This is the personal portfolio website of Jason Hkayem, showcasing projects, skills, and contact details. The portfolio is built with HTML, CSS, and JavaScript and is designed to highlight Jason's academic achievements, technical skills, and professional experience.
@@ -52,7 +52,7 @@ This is the personal portfolio website of Jason Hkayem, showcasing projects, ski
    cd portfolio
    ```
 
-3. Open `portfolio.html` in your browser.
+3. Open `index.html` in your browser.
 
 ## Screenshots
 
@@ -68,3 +68,4 @@ This is the personal portfolio website of Jason Hkayem, showcasing projects, ski
 ## License
 
 This project is licensed under the MIT License. Feel free to use and modify it as needed.
+
