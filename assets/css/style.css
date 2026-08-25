@@ -641,12 +641,12 @@ section {
    Dark sections: force readable light text
    ============================== */
 
-#about, #internship, #portfolio, #skills {
+#about, #experience, #portfolio, #skills {
   color: rgba(255, 255, 255, 0.88) !important;
 }
 
 #about p, #about li,
-#internship p, #internship li,
+#experience p, #experience li,
 #portfolio p, #portfolio li,
 #skills p, #skills li {
   color: rgba(255, 255, 255, 0.78) !important;
@@ -659,7 +659,7 @@ section {
 }
 
 /* Role titles & subsection headings stay blue */
-#internship h3,
+#experience h3,
 #about h3,
 #skills h4 {
   color: #149ddd !important;

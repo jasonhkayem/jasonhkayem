@@ -1,71 +1,43 @@
-﻿
-# Jason Hkayem Portfolio
+# Jason Hkayem — Portfolio
 
-This is the personal portfolio website of Jason Hkayem, showcasing projects, skills, and contact details. The portfolio is built with HTML, CSS, and JavaScript and is designed to highlight Jason's academic achievements, technical skills, and professional experience.
+Personal portfolio site for **Jason Hkayem**, a Computer Science graduate (June 2026, Holy Spirit
+University of Kaslik) and Machine Learning Engineer working on embedding, deep learning, and
+graph-based recommendation systems.
 
-## Features
+**Live site:** https://jasonhkayem.github.io/jasonhkayem/
 
-- **Responsive Design**: The website adapts to different screen sizes for an optimal viewing experience.
-- **About Section**: A detailed introduction to Jason's background, education, and experience.
-- **Skills Section**: Visual representation of technical proficiencies such as HTML, CSS, JavaScript, Java, PHP, and C++.
-- **Portfolio Section**: Showcases key projects with links to their respective GitHub repositories.
-- **Contact Form**: Enables visitors to send messages directly through the website.
+Static single-page site — plain HTML, CSS, and JavaScript. No build step, no dependencies to install.
 
 ## Sections
 
-### 1. **Home**
-   - A welcome page introducing Jason Hkayem with a dynamic typing animation.
+| Section | Contents |
+| --- | --- |
+| **Home** | Name, typed-animation role headline, links to Projects and CV, and GitHub / LinkedIn / email icons. |
+| **About** | Current role, education, and the kind of work I'm looking for. |
+| **Experience** | Machine Learning Engineer Intern at Anghami / OSN+ (June 2026 – Present) and Cloud AI/ML Engineer Intern at Zero&One (Summer 2025), with the certificate. |
+| **Projects** | AI Triage Workflow, CloudQ, Stride, Post-COVID Analytics, Loan Approval Classification, AI Obesity Predictor — each linking to its GitHub repo, plus a live demo for Stride. |
+| **Skills** | Programming, Machine Learning & AI, frameworks, MLOps & Cloud, data & analytics, BI & automation, spoken languages. |
 
-### 2. **About**
-   - Overview of Jason's education, professional experience, leadership roles, and languages spoken.
+## Tech
 
-### 3. **Skills**
-   - Technical skills displayed with progress bars, showcasing proficiency in various programming languages and tools.
+- **Markup / styling:** HTML5, CSS3, [Bootstrap 5](https://getbootstrap.com/)
+- **Icons:** [Boxicons](https://boxicons.com/), [Bootstrap Icons](https://icons.getbootstrap.com/)
+- **JavaScript:** [Typed.js](https://mattboldt.com/demos/typed-js/) for the headline animation,
+  [Waypoints](http://imakewebthings.com/waypoints/) for scroll triggers, and `assets/js/main.js`
+  for navigation, smooth scrolling, and the mobile menu
+- **Fonts:** Open Sans, Raleway, and Poppins via Google Fonts
 
-### 4. **Portfolio**
-   - **Projects**:
-     - **Bank Database**: A database management system for a bank. [GitHub Link](https://github.com/jasonhkayem/Bank-Database.git)
-     - **Car Dealership**: A primitive online car dealership interface built for an Object-Oriented Programming course. [GitHub Link](https://github.com/jasonhkayem/Car-Dealership.git)
-     - **Weather App**: A group project developed during a Programming Workshop. [GitHub Link](https://github.com/jasonhkayem/Weather-App.git)
+Everything except the fonts is vendored under `assets/vendor/`, so the site works offline.
 
-### 5. **Contact**
-   - Includes a form for visitors to send messages.
+## Layout
 
-## Technologies Used
-
-- **Frontend**: HTML, CSS, JavaScript
-- **Libraries/Frameworks**:
-  - Bootstrap
-  - Boxicons
-  - AOS (Animate on Scroll)
-  - Typed.js
-
-## How to Run the Project
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jasonhkayem/portfolio.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio
-   ```
-
-3. Open `index.html` in your browser.
-
-## Screenshots
-
-- **Home Page**: Dynamic typing animation with a clean introduction.
-- **About Page**: Overview of Jason's education and experience.
-- **Portfolio Page**: List of projects with links to GitHub repositories.
-
-## Credits
-
-- Developed by **Jason Hkayem**.
-- Icons and animations powered by external libraries like Boxicons and AOS.
-
-## License
-
-This project is licensed under the MIT License. Feel free to use and modify it as needed.
-
+```
+index.html               Whole site — every section lives here
+portfolio.html           Legacy path; redirects to index.html
+CV_Jason_Hkayem.pdf      CV, linked from the hero
+assets/
+  css/style.css          Active stylesheet
+  js/main.js             Nav, smooth scroll, typed headline
+  img/                   Certificate image
+  vendor/                Bootstrap, Boxicons, Bootstrap Icons, Typed.js, Waypoints
+```
