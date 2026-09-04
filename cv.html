@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>cv.html</title>
+<style>
+  @page { size: letter; margin: 26.1pt 39pt 36pt 39.75pt; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Arial, "Liberation Sans", Helvetica, sans-serif;
+    font-size: 9.4pt;
+    line-height: 1.2;
+    color: #000;
+  }
+  h1 { font-size: 16pt; font-weight: bold; text-align: center; margin: 0 0 1.7pt; line-height: 1.2; }
+  p.contact { font-size: 9pt; text-align: center; margin: 0 0 2.2pt; }
+  p.summary { font-size: 8.7pt; font-style: italic; text-align: center; margin: 0; }
+  h2 {
+    font-size: 10.3pt; font-weight: bold;
+    margin: 5.1pt 0 1.6pt;
+    padding-bottom: 1.1pt;
+    border-bottom: 0.75pt solid #000;
+  }
+  h2.first { margin-top: 3.8pt; }
+  p { margin: 0 0 0.8pt; }
+  a { color: #0563C1; text-decoration: underline; }
+  ul { margin: 0 0 3pt; padding-left: 15pt; list-style-type: square; }
+  li { margin-bottom: 0.5pt; }
+  .entry { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 1.2pt; }
+  .entry .role { font-weight: bold; }
+  .proj { margin: 0 0 1.2pt; }
+  .proj a { font-weight: bold; }
+  .proj i { font-style: italic; }
+</style>
+</head>
+<body>
+
+<h1>Jason Hkayem</h1>
+<p class="contact">81-654045 | jasonhkayem1@gmail.com | <a href="http://www.linkedin.com/in/jason-hkayem-415407309">LinkedIn</a> | <a href="https://jasonhkayem.github.io/jasonhkayem/">Portfolio</a></p>
+<p class="summary">CS graduate (June 2026) with hands-on experience as a machine learning engineer, building and evaluating embedding, deep learning, and graph-based recommendation systems in production. Also comfortable across the stack, from cloud infrastructure to backend APIs.<br>Open to technical and hybrid roles in ML, AI, operations, or product.</p>
+
+<h2 class="first">Education</h2>
+<p><strong>Bachelor of Computer Science,</strong> Holy Spirit University of Kaslik | 2023&#8211;2026 | GPA: 3.67, Honors &nbsp;|&nbsp; <strong>Baccalaureate in SG,</strong> College Saint-Joseph des Filles de la Charite | 2006&#8211;2021</p>
+
+<h2>Skills</h2>
+<p><strong>Languages:</strong> Arabic, English, French &nbsp;|&nbsp; <strong>Programming:</strong> Python, Java, C++, C, JavaScript, HTML, CSS, PHP</p>
+<p><strong>Frameworks:</strong> Flask, Streamlit, PyTorch, HuggingFace, SentenceTransformers, FAISS, NumPy, Pandas, scikit-learn &nbsp;|&nbsp; <strong>Tools:</strong> AWS, Docker, PostgreSQL, MLFlow, Airflow, n8n, Power BI</p>
+
+<h2>Work Experience</h2>
+<div class="entry"><span class="role">Machine Learning Engineer Intern | Anghami / OSN+</span><span class="date">June 2026 &#8211; Present</span></div>
+<ul>
+  <li>Built and evaluated lyrics-embedding pipelines across genre/language classification, a third-party benchmark, and curated mood playlists to test whether lyrical signal could strengthen collaborative-filtering recommendations</li>
+  <li>Designed and trained PyTorch neural networks, including multi-task learning architectures, on lyrics embeddings to predict mood/playlist fit</li>
+  <li>Prototyped and scaled a Graph Neural Network-based collaborative-filtering model as an alternative recommendation approach, training on the full production dataset</li>
+  <li>Evaluated optimization, systems, and architecture tradeoffs (training cost vs. accuracy, model choice, pipeline design) throughout each project to keep experimental work grounded in production feasibility</li>
+</ul>
+
+<div class="entry"><span class="role">Cloud AI/ML Engineer Intern | Zero&amp;One</span><span class="date">Summer 2025</span></div>
+<ul>
+  <li>Designed and exposed RESTful CRUD APIs using Flask within a modular, service-oriented backend architecture</li>
+  <li>Integrated AWS Bedrock into a serverless application to enable generative AI capabilities within a scalable cloud infrastructure</li>
+  <li>Built document embedding and retrieval pipelines using RAG architecture to enable semantic search over domain-specific content</li>
+</ul>
+
+<div class="entry"><span class="role">Waiter | Anthony's Foodhub</span><span class="date">May 2021&#8211;Present</span></div>
+<ul>
+  <li>Demonstrated reliability and time management while balancing work with full-time studies in a fast-paced, team-oriented environment</li>
+</ul>
+
+<h2>Projects</h2>
+<div class="proj"><a href="https://github.com/jasonhkayem/ai-triage-workflow">AI Triage Workflow</a> | <i>n8n, LLM Orchestration</i></div>
+<ul>
+  <li>Designed a deterministic four-stage LLM pipeline (ingestion &#8594; parallel classification/enrichment &#8594; parsing &#8594; decision engine) to transform unstructured support messages into structured, machine-readable records for downstream automation</li>
+  <li>Implemented parallel LLM calls with strict JSON schemas to classify messages by category, priority, and confidence while extracting structured fields with explicit null-handling to eliminate parsing failures</li>
+  <li>Built rule-based decision engine consolidating routing logic, priority computation, and escalation rules into a single, centralized, auditable code node for consistency and maintainability</li>
+</ul>
+
+<div class="proj"><a href="https://github.com/jasonhkayem/cloudq">CloudQ</a> | <i>RAG-based learning platform chatbot</i></div>
+<ul>
+  <li>Developed a RAG-based chatbot using AWS services to answer course-specific queries against embedded document knowledge bases</li>
+  <li>Architected a modular retrieval layer decoupled from the generation layer, enabling swapping of embedding models or LLM providers without restructuring the pipeline</li>
+</ul>
+
+<div class="proj"><a href="https://github.com/jasonhkayem/Stride">Stride</a> | <i>AI running platform | Flask, PostgreSQL, OpenAI, Strava OAuth2</i></div>
+<ul>
+  <li>Engineered an AI coaching layer using OpenAI's API to dynamically generate personalized weekly training plans calibrated to individual user goals and activity history</li>
+  <li>Implemented Strava OAuth2 to sync real athlete data (lap splits, pace, heart rate) into a unified schema; built full JWT auth system with bcrypt hashing and secure forgot-password email flow</li>
+  <li>Built a social layer (feeds, likes, comments, follows, clubs, audit logging) and visualized activity data with Chart.js and Leaflet.js GPS maps; deployed as a production SPA with vanilla JS hash-router</li>
+</ul>
+
+<h2>Volunteering</h2>
+<ul>
+  <li><strong>Scouts du Liban</strong> | Member (2015&#8211;Present), Patrol Chief (2019&#8211;2021), Team Chief (2024&#8211;Present)</li>
+</ul>
+
+</body>
+</html>
