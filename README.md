@@ -1,8 +1,8 @@
 # Jason Hkayem — Portfolio
 
 Personal portfolio site for **Jason Hkayem**, a Computer Science graduate (June 2026, Holy Spirit
-University of Kaslik) and Machine Learning Engineer working on embedding, deep learning, and
-graph-based recommendation systems.
+University of Kaslik) and Machine Learning Engineer working on embedding, deep learning,
+graph-based, and LLM-based recommendation systems.
 
 **Live site:** https://jasonhkayem.github.io/jasonhkayem/
 
