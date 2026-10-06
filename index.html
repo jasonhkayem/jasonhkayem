@@ -136,6 +136,7 @@
           <p class="fst-italic mb-2">June 2026 – Present</p>
 
           <ul>
+            <li>Fine-tuned Qwen3.5-4B with LoRA as a recommender, improving offline hit@50 over the production model by +2.6 to +4.7 pts across four held-out days, with every paired 95% confidence interval above zero.</li>
             <li>Built and evaluated lyrics-embedding pipelines across genre/language classification, a third-party benchmark, and curated mood playlists to test whether lyrical signal could strengthen collaborative-filtering recommendations.</li>
             <li>Designed and trained PyTorch neural networks, including multi-task learning architectures, on lyrics embeddings to predict mood and playlist fit.</li>
             <li>Prototyped and scaled a Graph Neural Network-based collaborative-filtering model as an alternative recommendation approach, training on the full production dataset.</li>
@@ -144,7 +145,7 @@
 
           <p class="mb-0">
             <strong>Tech stack:</strong>
-            Python, PyTorch, HuggingFace, SentenceTransformers, FAISS, Graph Neural Networks, MLflow, Airflow
+            Python, PyTorch, HuggingFace, LoRA, SentenceTransformers, FAISS, Graph Neural Networks, MLflow, Airflow
           </p>
         </div>
       </div>
